@@ -1,0 +1,165 @@
+$debug: false !default;
+$image-url-path: "assets/img/" !default;
+$font-url-path: "assets/fonts/" !default;
+$primary_color_one: #000 !default;
+$primary_color_two: #fff !default;
+$border_radius: 15px !default;
+$border_radius_small: 10px !default;
+$border_round_radius: 50% !default;
+
+//GRID Settings
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 544px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1360px
+) !default;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1170px
+) !default;
+
+
+// THEME COLORS
+$themeColorOne: #033C7D; // Обычно самый темный цвет. Используется для: заголовков h1-h6 - $titleFontColor и других.
+$themeColorTwo: #E9EAF0; // Основной/акцентный цвет бренда. Поменять значение этой переменной согласно макета обязательно!
+$box_shadow_blocks: 0 15px 30px rgba(6, 16, 88, 0.03);
+$light_text_color: #B4B7CC;
+$range_slider_color: #70A6D6;
+$slider_mark_color: #CED0DF;
+
+
+$borderRadius: 6px;
+$borderColor: lighten($themeColorOne, 70%);
+$shadow: 0 0 10px rgba($themeColorOne, .2);
+
+// SELECTION: цвет фона и текста при выделении его курсором
+$selectionBgColor: lighten(#70A6D6, 15%);
+$selectionFontColor: #fff;
+
+// BODY
+$bodyBgColor: $themeColorTwo;
+$bodyFontColor: $themeColorOne;
+
+// WRAPPER
+$wrapperBgColor: #fff;
+
+// HEADER: цвет фона шапки сайта
+$headerBgColor: $primary_color_two;
+$headerFontColor: $themeColorOne;
+
+// Text Highlight: цвет фона и текста при добавлении к нему .highlighted
+$textHighlightBgColor: $themeColorTwo;
+$textHighlightColor: #fff;
+
+// MENU
+$menuBgColor: $themeColorOne;
+$menuBgColorActive: $themeColorTwo;
+$menuFontColor: #fff;
+$menuFontColorActive: #fff;
+
+//Sub Menu
+$menuMobileSubMenuBGColor: lighten($themeColorOne, 10%);
+$menuMobileTextColor: #fff;
+$menuMobileSubMenuLinkFontSize: 18px;
+$menuMobileSubMenuTextColor: $menuMobileTextColor;
+$menuMobileSubMenuBGOnHover: darken($themeColorTwo, 10%);
+$menuMobileSubMenuTextColorOnHover: #fff;
+
+// MENU Mobile
+$navArrowColor: #fff;
+$navHeaderMobileBGColor: $themeColorOne;
+$navHamburgerMobileColor: #fff;
+$menuMobileBGColor: $themeColorOne;
+$menuMobileLinkFontSize: 20px;
+
+$hamburger-offset: 8px;
+$hamburger-duration: .1s;
+$hamburger-delay: .1s;
+$hamburger-color: $themeColorTwo;
+
+$menu-close-size: 25px;
+$menu-close-color: #fff;
+$menuContainerMobilePaddingTop: 20%;
+
+// TITLES
+$titleFontColor: $themeColorOne;
+$titleFontColorActive: lighten($titleFontColor, 10%);
+
+// LINKS
+$linkFontColor: #000;
+$linkFontColorActive: lighten($linkFontColor, 20%);
+
+// TABLE
+$tableBgColor: $themeColorTwo;
+$tableBgColorActive: lighten($themeColorTwo, 10%);
+$tableBorderColor: #fff;
+$tableBorderColorActive: #989898;
+$tableOddBgColor: $themeColorOne;
+$tableOddFontColor: #fff;
+$tableEvenBgColor: $themeColorTwo;
+$tableEvenFontColor: #fff;
+
+// TEXT
+$textMutedColor: #aaa;
+
+// Icons
+$iconColor: $themeColorTwo;
+$iconColorActive: lighten($themeColorTwo, 10%);
+$iconColorReversed: $bodyBgColor;
+
+// FORMS
+$formFieldBorderWidth: 1px;
+$formFieldBorderColor: lighten($themeColorOne, 60%);
+$formFieldPadding: 11px 8px;
+$formFieldTextColor: #000;
+$formFieldTextSize: 18px;
+$formFieldBorderRadius: $borderRadius;
+$formFieldBackgroundColor: #fff;
+$inputFieldMinHeight: 38px;
+$formBgColor: lighten($themeColorOne, 75%);
+
+// FOOTER
+$footerBgColor: $themeColorOne;
+$footerFontColor: #fff;
+$footerLinkColorActive: darken($footerFontColor, 5%);
+
+// Pagination
+$paginationActiveLink: $themeColorTwo;
+$paginationActiveLinkText: #fff;
+$paginationLinkOnHover: $themeColorTwo;
+$paginationLinkOnHoverText: #fff;
+
+//WOOCOMMERCE
+$wooThemeColor: $themeColorTwo;
+
+// On sale
+$onsaleBackgroundColor: $wooThemeColor;
+$onsaleFontColor: #fff;
+
+// Products price
+$productsPriceFontColor: $wooThemeColor;
+
+// Single Product page
+$productPriceFontColor: $wooThemeColor;
+
+// error
+$errorBorderTopColor: #b81c23;
+$errorIconFontColor: #b81c23;
+
+// info
+$infoBorderTopColor: #1e85be;
+$infoIconFontColor: #1e85be;
+
+// message
+$messageBorderTopColor: $themeColorTwo;
+$messageIconFontColor: $themeColorTwo;
+
+//WOOCOMMERCE end
