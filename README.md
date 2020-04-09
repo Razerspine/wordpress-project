@@ -1,1 +1,1 @@
-# Brainworks WordPress Master Theme by razerspine
+# WordPress Master Theme by razerspine
