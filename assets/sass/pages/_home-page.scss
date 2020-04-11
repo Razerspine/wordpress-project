@@ -387,6 +387,7 @@
   &__item {
     background: $primary_color_two;
     border-radius: $border_radius_small;
+    box-shadow: $box_shadow_blocks;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -394,15 +395,22 @@
     width: 100%;
     height: 360px;
     padding: 0 15px;
+    @extend %smooth_animation;
+
+    &:hover {
+      @extend %smooth_animation;
+      box-shadow: $box_shadow_hover;
+
+      & .middle-section__description {
+        border-color: $range_slider_color;
+        @extend %smooth_animation;
+      }
+    }
   }
 
   &__link {
-    &.btn-secondary {
-      color: $themeColorOne;
-
-      &:hover, &:focus {
-        color: $primary_color_two;
-      }
+    &:hover, &:focus {
+      color: $primary_color_two;
     }
   }
 
@@ -414,6 +422,7 @@
     margin: 30px 0;
     font-size: 18px;
     text-align: center;
+    @extend %smooth_animation;
   }
 
   &__image-wrapper {

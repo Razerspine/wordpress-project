@@ -31,10 +31,10 @@ $container-max-widths: (
 $themeColorOne: #033C7D; // Обычно самый темный цвет. Используется для: заголовков h1-h6 - $titleFontColor и других.
 $themeColorTwo: #E9EAF0; // Основной/акцентный цвет бренда. Поменять значение этой переменной согласно макета обязательно!
 $box_shadow_blocks: 0 15px 30px rgba(6, 16, 88, 0.03);
+$box_shadow_hover: 0 15px 30px 1px rgba(6, 16, 88, 0.3);
 $light_text_color: #B4B7CC;
 $range_slider_color: #70A6D6;
 $slider_mark_color: #CED0DF;
-
 
 $borderRadius: 6px;
 $borderColor: lighten($themeColorOne, 70%);

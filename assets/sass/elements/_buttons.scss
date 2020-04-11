@@ -161,21 +161,21 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-    $background: $btn-secondary-bg-color;
+    $background: $btn-primary-bg-color;
     $btn-primary-color: white;
     $btn-primary-color-hover: white;
-    $border: $btn-secondary-bg-color;
-    $hover-background: $btn-primary-bg-color;
-    $hover-border: $btn-primary-bg-color;
+    $border: $btn-primary-bg-color;
+    $hover-background: lighten($btn-primary-bg-color, 8%);
+    $hover-border: lighten($btn-primary-bg-color, 8%);
     $active-background: $btn-primary-bg-color;
     $active-border: $btn-primary-bg-color;
-    
+
     @if $btn-enable-gradients {
         background: $background linear-gradient($btn-gradient-angle, mix(#fff, $background, 15%), $background) repeat-x;
     } @else {
         background: $background;
     }
-    
+
     color: $btn-primary-color;
     border-color: $border;
 
@@ -204,15 +204,15 @@ fieldset:disabled a.btn {
 
     &.disabled,
     &:disabled {
-        color: $themeColorTwo;
-        background-color: $themeColorTwo;
+        color: $themeColorOne;
+        background-color: $themeColorOne;
         border-color: $border;
     }
 
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active {
-        color: $btn-primary-color-hover;
-        background-color: $active-background;
+        color: $btn-primary-color;
+        background-color: lighten($active-background, 10%);
         @if $btn-enable-gradients {
             background-image: none;
         }
@@ -410,7 +410,7 @@ fieldset:disabled a.btn {
 
 @media (max-width: 1024px) {
     .btn {
-        padding: 7px 28px;
+        padding: 8px 28px;
         font-size: 15px;
     }
 
@@ -427,7 +427,7 @@ fieldset:disabled a.btn {
 
 @media (max-width: 768px) {
     .btn {
-        padding: 6px 26px;
+        padding: 8px 26px;
         font-size: 14px;
     }
 
@@ -444,7 +444,7 @@ fieldset:disabled a.btn {
 
 @media (max-width: 544px) {
     .btn {
-        padding: 5px 24px;
+        padding: 8px 24px;
         font-size: 12px;
     }
 
